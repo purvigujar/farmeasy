@@ -313,16 +313,15 @@ textarea {
         width: 60%;
     }
     .icons {
-        margin-top: 40px;
-        align-items: center;
-        text-align: center;
+        padding-top: 20px;
         width: 70px;
         height: 70px;
         background-color: #fff;
         border-radius: 50%;
     }
     .fag {
-        margin-top: 15px;
+        margin: 0px;
+        padding-top: 20px;
     }
     .card-head {
         font-weight: 600;
