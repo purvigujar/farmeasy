@@ -2,16 +2,16 @@ var simplemaps_countrymap_mapdata={
   main_settings: {
    //General settings
     width: "responsive", //'700' or 'responsive'
-    background_color: "#FFFFFF",
+    background_color: "#ffffff",
     background_transparent: "yes",
-    border_color: "#ffffff",
-    state_description: "",
-    state_color: "#88A4BC",
-    state_hover_color: "black",
-    state_url: "https://simplemaps.com",
+    border_color: "black",
+    state_description: "null",
+    state_color: "green",
+    state_hover_color: "yellow",
+    state_url: " ",
     border_size: "2",
     all_states_inactive: "no",
-    all_states_zoomable: "no",
+    all_states_zoomable: "yes",
     
     //Location defaults
     location_description: "Location description",
@@ -71,151 +71,117 @@ var simplemaps_countrymap_mapdata={
   state_specific: {
     "1": {
       name: "Andaman And Nicobar",
-      color: "pink"
     },
     "2": {
       name: "Andhra Pradesh",
-      color: "red"
     },
     "3": {
       name: "Arunachal Pradesh",
-      color: "yellow"
     },
     "4": {
       name: "Assam",
-      color: "blue"
     },
     "5": {
       name: "Bihar",
-      color: "green"
     },
     "6": {
       name: "Chandigarh",
-      color: "red"
     },
     "7": {
       name: "Chhattisgarh",
-      color: "yellow"
     },
     "8": {
       name: "Dadra And Nagar Haveli",
-      color: "blue"
     },
     "9": {
       name: "Daman And Diu",
-      color: "purple"
     },
     "10": {
       name: "Delhi",
-      color: "pink"
     },
     "11": {
       name: "Goa",
-      color: "green"
     },
     "12": {
       name: "Gujarat",
-      color: "blue"
+
     },
     "13": {
       name: "Haryana",
-      color: "pink"
     },
     "14": {
       name: "Himachal Pradesh",
-      color: "blue"
     },
     "16": {
       name: "Jharkhand",
-      color: "pink"
     },
     "17": {
       name: "Karnataka",
-      color: "blue"
     },
     "18": {
       name: "Kerala",
-      color: "yellow"
+
     },
     "19": {
       name: "Lakshadweep",
-      color: "light green"
     },
     "20": {
       name: "Madhya Pradesh",
-      color: "red"
     },
     "21": {
       name: "Maharashtra",
-      color: "green"
+
     },
     "22": {
       name: "Manipur",
-      color: "red"
     },
     "23": {
       name: "Meghalaya",
-      color: "green"
     },
     "24": {
       name: "Mizoram",
-      color: "light blue"
     },
     "25": {
       name: "Nagaland",
-      color: "pink"
     },
     "26": {
       name: "Orissa",
-      color: "purple"
     },
     "27": {
       name: "Puducherry",
-      color: "yellow"
     },
     "28": {
       name: "Punjab",
-      color: "green"
     },
     "29": {
       name: "Rajasthan",
-      color: "orange"
     },
     "30": {
       name: "Sikkim",
-      color: "green"
     },
     "31": {
       name: "Tamil Nadu",
-      color: "green"
     },
     "32": {
       name: "Tripura",
-      color: "pink"
     },
     "33": {
       name: "Uttar Pradesh",
-      color: "light blue"
     },
     "34": {
       name: "Uttaranchal",
-      color: "red"
     },
     "35": {
       name: "West Bengal",
-      color: "blue"
     },
     "36": {
       name: "Jammu And Kashmir",
-      color: "yellow"
     },
     "37": {
       name: "Telangana",
-      color: "pink"
     },
     "38": {
       name: "Ladakh",
-      color: "orange"
     }
   },
   locations: {

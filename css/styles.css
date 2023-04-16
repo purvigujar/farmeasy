@@ -135,6 +135,10 @@ h3 {
     background-color: #FFE533;
 }
 
+.btn-warning{
+    background-color: #FFE533;
+}
+
 .btn-card{
     font-size: 1rem;
     padding: 5px 10px;
@@ -414,7 +418,17 @@ textarea {
 }
 
 #map-section{
+    display: flex;
+    padding-top: 10px;
     margin: auto;
     width:600px;
     height: 500px;
+}
+
+#map{
+    float: left;
+}
+
+.dropdown{
+    float: right;
 }
