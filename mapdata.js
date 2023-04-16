@@ -7,7 +7,7 @@ var simplemaps_countrymap_mapdata={
     border_color: "black",
     state_description: "null",
     state_color: "green",
-    state_hover_color: "yellow",
+    state_hover_color: "black",
     state_url: " ",
     border_size: "2",
     all_states_inactive: "no",

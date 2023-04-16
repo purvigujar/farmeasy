@@ -514,3 +514,13 @@ input:focus{
     width: 30%;
 }
 
+.result{
+    display: block;
+    text-align: center;
+}
+
+#res{
+    color: green;
+    text-decoration: underline;
+    font-weight: 700;
+}

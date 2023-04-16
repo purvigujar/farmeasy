@@ -26,7 +26,7 @@
     <!-- NAVBAR -->
     <section class="navbar-sec">
         <!-- <div class="container-fluid"> -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-light">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img class="img-logo" src="images/farmeasy-logo.svg" alt="logo" class="d-inline-block align-text-top">
@@ -92,8 +92,8 @@
 
               <div class="row para-row">
                 <div class="col para-item">
-                    <label for="h-val" class="form-label parameter-head">H</label>
-                    <input type="number" class="form-control btn-para" id="h-val" placeholder="24" >
+                    <label for="n-val" class="form-label parameter-head">N</label>
+                    <input type="number" class="form-control btn-para" id="n-val" placeholder="24" >
                 </div>
                 <div class="col para-item">
                     <label for="p-val" class="form-label parameter-head">P</label>
@@ -105,7 +105,7 @@
                 </div>
                 <button type="submit" class="btn btn-success btn-submit">Predict</button>
               </div>
-            
+              <h4 class="result">Recommended crop for your field is : <span id="res"> Wheat </span></h4>
           </div>
 
     </section>
