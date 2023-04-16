@@ -524,3 +524,8 @@ input:focus{
     text-decoration: underline;
     font-weight: 700;
 }
+
+.breadcrumb{
+    margin-top: 30px;
+    display: inline;
+}
