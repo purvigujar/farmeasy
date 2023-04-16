@@ -417,6 +417,7 @@ textarea {
     }
 }
 
+/* MODEL 3 */
 #map-section{
     display: flex;
     padding-top: 10px;
@@ -432,3 +433,84 @@ textarea {
 .dropdown{
     float: right;
 }
+
+/* MODEL 1 */
+
+#location{
+    background-color: #FFE533;
+
+}
+
+#mapframe{
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#curloc{
+    display: block;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.btn-curloc{
+    pointer-events: none;
+    margin-left: 1em;
+}
+
+/* 
+hr{
+    color:#2B9348;
+} */
+
+
+#parameters{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* .para-cont{
+   
+} */
+
+.para-row{
+    display: flex;
+    justify-content: center;
+}
+
+.para-item{
+    display: inline;
+    margin-right: 60px;
+    padding: 2% 0%;
+}
+
+.parameter-head{
+    display: inline;
+    font-weight: 500;
+    font-size: 1.2em;
+    color:#207538;
+    padding:0;
+    margin:0;
+}
+
+/* input{
+    
+}
+
+input:focus{
+    outline:none;
+} */
+
+.btn-para{
+    margin-top: 1rem;
+    margin-left: 0;
+    width: 250px;
+}
+
+.btn-submit{
+    display: block;
+    margin-top: 2em;
+    width: 30%;
+}
+
