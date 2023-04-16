@@ -11,7 +11,7 @@ var simplemaps_countrymap_mapdata={
     state_url: " ",
     border_size: "2",
     all_states_inactive: "no",
-    all_states_zoomable: "yes",
+    all_states_zoomable: "no",
     
     //Location defaults
     location_description: "Location description",
