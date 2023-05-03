@@ -10,6 +10,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+  </script>
   <script src="https://kit.fontawesome.com/068f1419a7.js" crossorigin="anonymous"></script>
 
   <style>
@@ -17,6 +20,9 @@
   </style>
   <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+      body{
+        background-color: white;
+      }
   </style>
 
   <!-- Vendor CSS Files -->
@@ -38,7 +44,7 @@
   <!-- NAVBAR -->
   <section class="navbar-sec">
     <!-- <div class="container-fluid"> -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img class="img-logo" src="images/farmeasy-logo.svg" alt="logo" class="d-inline-block align-text-top">
@@ -74,152 +80,76 @@
       </div>
 </section>
 
-<!-- start of charts -->
+<!-- line chart -->
 
-<section class="section">
+  <section id="chart">
     <div class="row">
-
-      <div class="col-lg-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Line Chart</h5>
-
-            <!-- Line Chart -->
-            <canvas id="lineChart" style="max-height: 400px;"></canvas>
-            <script>
-              document.addEventListener("DOMContentLoaded", () => {
-                new Chart(document.querySelector('#lineChart'), {
-                  type: 'line',
-                  data: {
-                    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-                    datasets: [{
-                      label: 'Line Chart',
-                      data: [65, 59, 80, 81, 56, 55, 40],
-                      fill: false,
-                      borderColor: 'rgb(75, 192, 192)',
-                      tension: 0.1
-                    }]
-                  },
-                  options: {
-                    scales: {
-                      y: {
-                        beginAtZero: true
-                      }
-                    }
-                  }
-                });
-              });
-            </script>
-            <!-- End Line CHart -->
-
-          </div>
+      <div class="col-lg-8">
+        <div class="row">
+          <canvas id="myChart" class = "shadow-lg p-3 mb-5 bg-white rounded" style="width:100%;max-width:700px"></canvas>
         </div>
       </div>
 
-      <div class="col-lg-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Bar CHart</h5>
+      <div class="col-lg-4">
+        <div class="card" style="width: 16rem;">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">This month <span class="li-badge"><i class="fa-solid fa-caret-up" style="color: #15bc4f;"></i>  12 / ₹50 </span></li>
+            <li class="list-group-item">Last month<span class="li-badge"><i class="fa-solid fa-caret-down" style="color: red;"></i>  8 / ₹30 </span></li>
+            <li class="list-group-item">Next month<span class="li-badge"><i class="fa-solid fa-caret-up" style="color: #15bc4f;"></i>  15 / ₹xx </span></li>
+          </ul>
+        </div>
+      
+        <h4 class="top-prods">Top producers are: </h4>
+        <h6 class="producers-list">Maharashtra, Sikkim, Andhra Pradesh, Goa, Kerala, Bihar</h6>
+      
+      </div>
 
-            <!-- Bar Chart -->
-            <canvas id="barChart" style="max-height: 400px;"></canvas>
-            <script>
-              document.addEventListener("DOMContentLoaded", () => {
-                new Chart(document.querySelector('#barChart'), {
-                  type: 'bar',
-                  data: {
-                    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-                    datasets: [{
-                      label: 'Bar Chart',
-                      data: [65, 59, 80, 81, 56, 55, 40],
-                      backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(255, 159, 64, 0.2)',
-                        'rgba(255, 205, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(201, 203, 207, 0.2)'
-                      ],
-                      borderColor: [
-                        'rgb(255, 99, 132)',
-                        'rgb(255, 159, 64)',
-                        'rgb(255, 205, 86)',
-                        'rgb(75, 192, 192)',
-                        'rgb(54, 162, 235)',
-                        'rgb(153, 102, 255)',
-                        'rgb(201, 203, 207)'
-                      ],
-                      borderWidth: 1
-                    }]
-                  },
-                  options: {
-                    scales: {
-                      y: {
-                        beginAtZero: true
-                      }
-                    }
-                  }
-                });
-              });
-            </script>
-             </div>
-            </div>
-          </div>
-            <!-- End Bar CHart -->
 
-              <div class="col-lg-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Bar Chart</h5>
-      
-                    <!-- Bar Chart -->
-                    <div id="barChart"></div>
-      
-                    <script>
-                      document.addEventListener("DOMContentLoaded", () => {
-                        new ApexCharts(document.querySelector("#barChart"), {
-                          series: [{
-                            data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
-                          }],
-                          chart: {
-                            type: 'bar',
-                            height: 350
-                          },
-                          plotOptions: {
-                            bar: {
-                              borderRadius: 4,
-                              horizontal: true,
-                            }
-                          },
-                          dataLabels: {
-                            enabled: false
-                          },
-                          xaxis: {
-                            categories: ['Maharashtra', 'Andhra Pradesh', 'Rajasthan', 'Gujarat', 'West Bengal', 'Tamil Nadu', 'Assam',
-                              'Sikkim', 'Kerala', 'Ladakh'
-                            ],
-                          }
-                        }).render();
-                      });
-                    </script>
-                    <!-- End Bar Chart -->
-      
-                  </div>
-                </div>
-              </div>
-         <!-- Vendor JS Files -->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/chart.js/chart.umd.js"></script>
-  <script src="assets/vendor/echarts/echarts.min.js"></script>
-  <script src="assets/vendor/quill/quill.min.js"></script>
-  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    </div>
+
+
+    
+
+  </section>
+
+  <script>
+    const xValues = ["May","June","July","Aug","Sept","Oct","Nov","Dec"];
+    const yValues = [7,8,8,9,9,9,10,11,14,14,15];
+    
+    new Chart("myChart", {
+      type: "line",
+      data: {
+        labels: xValues,
+        datasets: [{
+          fill: false,
+          lineTension: 0,
+          backgroundColor: "rgba(0,0,255,1.0)",
+          borderColor: "rgba(0,0,255,0.1)",
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        scales: {
+          yAxes: [{ticks: {min: 6, max:16}}],
+        }
+      }
+    });
+    </script>
+
+    
+
+<aside>
+  
+</aside>
+
+
+
+
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src = "js/chart.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
-
+</html>

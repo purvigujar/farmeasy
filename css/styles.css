@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
@@ -528,4 +528,32 @@ input:focus{
 .breadcrumb{
     margin-top: 30px;
     display: inline;
+}
+
+
+#myChart{
+    margin-left: 150px;
+    display: flex;   
+    width: 100%;
+    padding: 25px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+
+.list-group-item{
+    padding: 50% 5px;
+}
+
+.li-badge{
+    margin-left:60px;
+}
+
+.top-prods{
+    color: rgb(20, 20, 105);
+}
+
+.producers-list{
+    display: flex;
+    margin-right:180px;
 }
